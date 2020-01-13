@@ -6,7 +6,7 @@
 
 <ingresso:template>
     <jsp:body>
-		<div class=" col-md-6 col-md-offset-3">
+		<div class="col-md-6 col-md-offset-3">
         <c:set var="bindingResult" value="${requestScope['org.springframework.validation.BindingResult.sala']}"/>
 
         <form action='/admin/sala' method="post">

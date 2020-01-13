@@ -44,7 +44,7 @@ public class Sessao {
 		
 	}
 
-	public void setPreco() {
+	public void setPreco(BigDecimal preco) {
 		
 		this.preco = preco;
 		

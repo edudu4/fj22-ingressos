@@ -18,9 +18,9 @@ import junit.framework.Assert;
 
 public class DescontoTest {
 	
-	Sala sala;
-	Filme filme;
-	Sessao sessao;
+	private Sala sala;
+	private Filme filme;
+	private Sessao sessao;
 	
 	@Before
 	public void requisitosParaOsTestesRodarem() {

@@ -103,8 +103,8 @@ public class FilmeController {
     	Filme filme = filmeDao.findOne(id);
     	List<Sessao> sessoes = sessaoDao.buscaSessoesDoFilm(filme);
     	
-    	Optional<DetalhesDoFilme> detalhesDoFilme = client.request(filme);
-    	
+    	Optional<DetalhesDoFilme> detalhesDoFilme = client.request(filme, DetalhesDoFilme.class);
+    	System.out.println(sessoes);
     	modelAndView.addObject("sessoes", sessoes);
     	modelAndView.addObject("detalhes", detalhesDoFilme.orElse(new DetalhesDoFilme()));
     	

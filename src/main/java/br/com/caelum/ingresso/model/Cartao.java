@@ -10,12 +10,18 @@ public class Cartao {
 	public String getNumero() {
 		
 		return numero;
-		
+	
 	}
 	
 	public boolean isValido() {
 		
-		return vencimento.isAfter(YearMonth.now());
+		if(vencimento == null) {
+		
+			return false;	
+		
+		}
+		
+		return vencimento.isAfter(YearMonth.now());	
 		
 	}
 	

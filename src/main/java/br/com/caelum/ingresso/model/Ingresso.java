@@ -31,7 +31,7 @@ public class Ingresso {
 	public Ingresso(Sessao sessao, TipoDeIngresso tipoDeIngresso, Lugar lugar ) {
 		
 		this.sessao = sessao;
-		this.preco = this.tipoDeIngresso.aplicaDesconto(sessao.getPreco());
+		this.preco = tipoDeIngresso.aplicaDesconto(sessao.getPreco());
 		this.tipoDeIngresso = tipoDeIngresso;
 		
 		this.lugar = lugar;
